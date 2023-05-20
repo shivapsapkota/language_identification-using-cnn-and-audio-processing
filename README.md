@@ -25,12 +25,12 @@ The system was tested on a set of audio samples and was able to achieve high acc
 
 ## Dataset Used
 
-This is a dataset of audio samples of 4 different Indian languages. Each audio sample is of 5 seconds duration. This dataset was created using regional videos available on YouTube.
+This is a dataset of audio samples of 4 different Nepali languages. Each audio sample is of 10 seconds duration. This dataset was created using VoxLingua107 and regional videos available on YouTube.
 
-This is constrained to Indian Languages only but could be extended.
+This is constrained to 5 Regional Nepali Languages only but could be extended.
 
 Languages present in the dataset -
-Hindi, Kannada, Tamil, Telugu.
+Nepali, Hindi, Snaskrit, Newari, Maithali.
 
 ## Points to Improve:
 
@@ -50,7 +50,7 @@ Hindi, Kannada, Tamil, Telugu.
 
 ### Step 1: Clone the repository
 ```bash
-git clone "https://github.com/aravind-selvam/Language_Identification-using-CNN-and-Audio-Processing.git" repository
+git clone "https://github.com/shivapsapkota/language_identification-using-cnn-and-audio-processing.git" repository
 ```
 
 ### Step 2- Create a conda environment after opening the repository
@@ -62,22 +62,12 @@ conda create -p env python=3.10 -y
 ```bash
 conda activate env/
 ```
+Alternatively you can also use venv
 
 ### Step 3 - Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
-
-### Step 4 - Export the  environment variable
-```bash
-export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
-
-export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
-
-export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
-
-```
-Before running server application make sure your `s3` bucket is available and empty
 
 ### Step 5 - Run the application server
 ```bash
@@ -94,23 +84,6 @@ http://localhost:8080/train
 http://localhost:8080
 ```
 
-## Run locally
-
-1. Check if the Dockerfile is available in the project directory
-
-2. Build the Docker image
-
-```
-docker build -t langapp .
-
-```
-
-3. Run the Docker image
-
-```
-docker run -d -p 8080:8080 <IMAGEID>
-```
-
 👨‍💻 Tech Stack Used
 1. Python
 2. Flask
@@ -119,10 +92,7 @@ docker run -d -p 8080:8080 <IMAGEID>
 5. CNN
 
 🌐 Infrastructure Required.
-1. AWS S3
-2. GAR (Google Artifact repository)
-3. GCE (Google Compute Engine)
-4. GitHub Actions
+1. Local Computer
 
 ## `src` is the main package folder which contains 
 
