@@ -66,4 +66,4 @@ PREDICTION_PIPELINE_DIR_NAME = "prediction_artifacts"
 PREDICTION_MODEL_DIR_NAME = "prediction_model"
 APPLICATION_ARTIFACTS_DIR = 'user_inputs'
 TRANSFORMATION_ARTIFACTS_DIR = 's3_transformations'
-NUM_CLASSES = 3
+NUM_CLASSES = 5
